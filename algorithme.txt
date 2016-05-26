@@ -1,0 +1,14 @@
+DEBUT
+je parcours le tableau des étudiants, pour chaque étudiant $currentEtudiant,
+	j'écris une requête "SELECT" qui me retourne l'id d'un étudiant ayant l'email de l'étudiant $currentEtudiant
+	j'exécute ma requête
+	
+	si j'ai au moins un résultat
+		alors j'affiche "étudiant existant"
+	sinon
+		j'écris une requête (préparée) d'insertion dans la table, avec les valeurs de $currentEtudiant
+		j'exécute la requête
+		j'affiche "étudiant inséré en DB"
+	fin du "si"	
+fin de la boucle de parcours
+FIN

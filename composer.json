@@ -1,0 +1,7 @@
+{
+    "name": "etudiant/projet_toto",
+    "description": "school project",
+    "require": {
+        "whatsma/zodiacsign": "dev-master"
+    }
+}
